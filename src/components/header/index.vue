@@ -31,6 +31,11 @@ export default {
             logoImg: logoImg,
             bg1Img: bg1Img
         }
+    },
+    methods:{
+        changeMenu(){
+            
+        }
     }
 }
 </script>

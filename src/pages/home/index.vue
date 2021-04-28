@@ -172,6 +172,7 @@ export default {
 </script>
 
 <style lang='less' scoped>
+
  .halo-home {
     position: relative;
     display: flex;

@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
     "less-loader": "^4.1.0",
+    "popper.js": "^1.16.1",
     "vue": "^2.5.2",
     "vue-fullpage.js": "^0.1.7",
     "vue-router": "^3.0.1"

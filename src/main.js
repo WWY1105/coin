@@ -10,7 +10,8 @@ import VueFullPage from 'vue-fullpage.js';
 
 Vue.use(VueFullPage);
 Vue.config.productionTip = false
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

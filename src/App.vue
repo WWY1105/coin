@@ -25,7 +25,8 @@ export default {
 </script>
 
 <style>
-#app {
-  
+#app,body,html {
+  padding: 0;
+  margin:0
 }
 </style>

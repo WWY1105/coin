@@ -12,6 +12,11 @@ Vue.use(VueFullPage);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+import Antd from 'ant-design-vue';
+Vue.use(Antd);
+import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
 new Vue({
   el: '#app',
   router,

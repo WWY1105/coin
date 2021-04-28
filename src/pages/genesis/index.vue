@@ -32,13 +32,13 @@
                             <div class="box-title">HOlppool</div>
                             <div class="box-con">10000000 ETH</div>
                         </div>
-                        <img class="bridge-side" :src="bridgeSide"></img>
+                        <img class="bridge-side" :src="bridgeSide"/>
                     </div>
                     <div class="cen-right">
                         <div class="right-change">
                             <div>
                                 <div class="change-title">
-                                    <img class="form-box-icon" :src="bridgeIcHalo"></img>HALO
+                                    <img class="form-box-icon" :src="bridgeIcHalo"/>HALO
                                     Network
                                 </div>
                                 <div class="change-bal">HRC-ETH Balance</div>

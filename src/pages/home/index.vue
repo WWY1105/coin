@@ -3,7 +3,7 @@
     <div class="halo-home">
             <div class="home-con">
                 <div class="introduce-con">
-                    <img class="gold-coins-img" :src="goldCoinsImg"></img>
+                    <img class="gold-coins-img" :src="goldCoinsImg"/>
                     <div class="introduce-word">
                         <div class="introduce-title">HALO Infinite Financial System</div>
                         <div class="introduce-text">
@@ -58,8 +58,8 @@
                 </div>
             </div>
             <div class="bridge-con-wrap">
-                <img class="home-left-img" :src="homeLeftImg"></img>
-                <img class="home-left-img2" :src="homeLeftImg"></img>
+                <img class="home-left-img" :src="homeLeftImg"/>
+                <img class="home-left-img2" :src="homeLeftImg"/>
                 <div class="bridge-con" id="bridge-con">
                     <div class="bridge-hd">
                         <div class="bridge-line"></div>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="bridge-bt">
-                        <img class="bg2-img" :src="bg2Img"></img>
+                        <img class="bg2-img" :src="bg2Img"/>
                         <Button type="primary" class="con-btn">
                             CONNECT
                         </Button>
@@ -86,14 +86,14 @@
                 <div class="down-con">
                     <div class="down-title">GET YOUR WALLET</div>
                     <div class="down-left">
-                        <img class="app-ex-img" :src="appExImg"></img>
+                        <img class="app-ex-img" :src="appExImg"/>
                         <div class="down-left-sup">
-                            <img class="mm-logo-img" :src="mmLogoImg"></img>
+                            <img class="mm-logo-img" :src="mmLogoImg"/>
                             <div class="sup-text">Supported</div>
                             <div>
-                                <img class="down-img" :src="iconAppleLogoImg"></img>
-                                <img class="down-img" :src="iconGoogleLogoImg"></img>
-                                <img class="down-img" :src="iconChromeLogoImg"></img>
+                                <img class="down-img" :src="iconAppleLogoImg"/>
+                                <img class="down-img" :src="iconGoogleLogoImg"/>
+                                <img class="down-img" :src="iconChromeLogoImg"/>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                         <div class="down-line-l"></div>
                     </div>
                     <div class="down-right">
-                        <img class="hashpay-img" :src="hashpayImg"></img>
+                        <img class="hashpay-img" :src="hashpayImg"/>
                     </div>
                 </div>
             </div>
@@ -180,7 +180,7 @@ export default {
     width: 100%;
 
     .home-con {
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -221,7 +221,7 @@ export default {
     .guide-con {
         box-sizing: border-box;
         display: flex;
-        width: 1200px;
+        width: 100%;
         height: 225px;
         background: #2b2b2b;
         border-radius: 10px;
@@ -310,7 +310,7 @@ export default {
 
     .bridge-con {
         padding-top: 80px;
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
 
         .bridge-hd {
@@ -373,7 +373,7 @@ export default {
         .down-con {
             position: relative;
             display: flex;
-            width: 1200px;
+            width: 100%;
             margin: 0 auto;
         }
 

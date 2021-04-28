@@ -1,12 +1,25 @@
 .halo-home {
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  overflow-x: hidden;
+}
+.halo-home .bg1-img {
+  position: absolute;
+  top: 0;
+  left: 700px;
+  z-index: -2;
+}
+.halo-home .gold-coins-img {
+  position: absolute;
+  top: 86px;
+  right: 24px;
+  width: 708px;
+  z-index: -1;
 }
 .halo-home .home-con {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  padding-top: 40px;
 }
 .halo-home .introduce-con {
   position: relative;
@@ -14,17 +27,9 @@
   width: 100%;
   height: 400px;
 }
-.halo-home .introduce-con .gold-coins-img {
-  position: absolute;
-  top: 16px;
-  right: 24px;
-  width: 708px;
-  z-index: 0;
-}
 .halo-home .introduce-con .introduce-word {
   z-index: 1;
   padding-top: 117px;
-  width: 620px;
 }
 .halo-home .introduce-con .introduce-title {
   font-size: 40px;
@@ -40,7 +45,7 @@
 .halo-home .guide-con {
   box-sizing: border-box;
   display: flex;
-  width: 1200px;
+  width: 100%;
   height: 225px;
   background: #2b2b2b;
   border-radius: 10px;
@@ -92,6 +97,7 @@
   background: #B1232C;
   border-radius: 4px;
   color: #fff;
+  border: none;
 }
 .halo-home .guide-con .guide-card2 .click-btn2 {
   margin-top: 80px;
@@ -121,8 +127,17 @@
 }
 .halo-home .bridge-con {
   padding-top: 80px;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+}
+.halo-home .bridge-con .click-btn {
+  margin-top: 30px;
+  width: 160px;
+  height: 44px;
+  background: #B1232C;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
 }
 .halo-home .bridge-con .bridge-hd {
   display: flex;
@@ -144,7 +159,6 @@
 }
 .halo-home .bridge-con .bridge-hd .bridge-text {
   margin-top: 20px;
-  width: 731px;
   height: 66px;
   font-size: 16px;
   line-height: 22px;
@@ -175,7 +189,7 @@
 .halo-home .down-wrap .down-con {
   position: relative;
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 .halo-home .down-wrap .down-title {
@@ -248,4 +262,97 @@
 }
 .halo-home .down-wrap .hashpay-img {
   width: 459px;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .halo-home {
+    padding: 0;
+  }
+  .halo-home .guide-con {
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .halo-home .guide-con .guide-card.guide-card2 {
+    width: 100%;
+  }
+  .halo-home .guide-con .guide-card.guide-card2 .click-btn {
+    width: 5.2rem;
+    height: 1.6rem;
+    background: #B1232C;
+    border-radius: 0.16rem;
+    font-size: 0.64rem;
+  }
+  .halo-home .guide-con .guide-card.guide-card2 .click-btn2 {
+    width: 5.2rem;
+    height: 1.6rem;
+    border-radius: 0.16rem;
+    opacity: 0.1;
+    font-size: 0.64rem;
+    color: rgba(255, 255, 255);
+  }
+  .halo-home .guide-con .guide-card .guide-title2 {
+    font-size: 0.72rem;
+    font-weight: bold;
+    line-height: 1rem;
+  }
+  .halo-home .guide-con .guide-card .guide-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.44rem;
+    margin-bottom: 0.48rem;
+  }
+  .halo-home .guide-con .guide-card .guide-text {
+    font-size: 0.64rem;
+    font-weight: 400;
+    line-height: 0.88rem;
+  }
+  .halo-home .guide-con .guide-card .guide-text2,
+  .halo-home .guide-con .guide-card .guide-text3 {
+    font-size: 0.64rem;
+    font-weight: 600;
+    line-height: 0.88rem;
+  }
+  .halo-home .section {
+    position: relative;
+  }
+  .halo-home .home-con {
+    padding: 0 0.8rem;
+  }
+  .halo-home .m_bg_2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .halo-home .m_bg_1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .halo-home .m_bg_system {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .halo-home .introduce-con .introduce-word {
+    padding-top: 4.66rem;
+  }
+  .halo-home .introduce-con .introduce-word .introduce-title {
+    font-size: 1.12rem;
+    color: #2B2B2B;
+    line-height: 1.36rem;
+    margin-bottom: 0.8rem;
+  }
+  .halo-home .introduce-con .introduce-word .midline {
+    width: 3.6rem;
+    height: 0.16rem;
+    background: #2B2B2B;
+  }
+  .halo-home .introduce-con .introduce-word .introduce-text {
+    font-size: 0.64rem;
+    color: #807677;
+    line-height: 0.88rem;
+    margin-top: 0.93rem;
+  }
 }

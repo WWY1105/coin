@@ -4,8 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // ...
-import 'fullpage.js/vendors/scrolloverflow';
-import VueFullPage from 'vue-fullpage.js';
+import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
+import VueFullPage from 'vue-fullpage.js'
 // ...
 
 Vue.use(VueFullPage);

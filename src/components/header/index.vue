@@ -16,11 +16,10 @@
             <Menu.Item key="genesis">HALO GENESIS</Menu.Item>
             <Menu.Item key="WHITEPAPER">WHITEPAPER</Menu.Item>
         </Menu> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <img :src="m_list_w" alt="">
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
@@ -47,20 +46,24 @@
             </div>
         </nav>
     </header>
-    <img class="bg1-img" :src="bg1Img"></img>
+    
 </div>
 </template>
 
 <script>
 import logoImg from '@/assets/images/logo.png';
-import bg1Img from '@/assets/images/bg1.jpg';
+import m_list_w from '@/assets/images/phone/m_list_w.png'
 import './index.less';
 export default {
     data() {
         return {
             logoImg: logoImg,
-            bg1Img: bg1Img
+            m_list_w:m_list_w
+           
         }
+    },
+    methods:{
+        changeMenu(){}
     }
 }
 </script>

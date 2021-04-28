@@ -3,9 +3,9 @@
     <div class="home-bt-con">
         <div class="bt-text">©2021 - 2022 HALO OS.All rights reserved.</div>
         <div>
-            <img class="jump-img" src={btIconTwitter} @click="window.open('https://twitter.com/finance_halo', '_blank')"></img>
-            <img class="jump-img" src={btIconTelegram} @click="window.open('https://t.me/halofinance_community', '_blank')"></img>
-            <img class="jump-img" src={btIconMedium} @click="window.open('https://medium.com/halo-finance', '_blank')"></img>
+            <img class="jump-img" :src='btIconTwitter' @click="window.open('https://twitter.com/finance_halo', '_blank')"></img>
+            <img class="jump-img" :src='btIconTelegram' @click="window.open('https://t.me/halofinance_community', '_blank')"></img>
+            <img class="jump-img" :src='btIconMedium' @click="window.open('https://medium.com/halo-finance', '_blank')"></img>
         </div>
     </div>
 </div>

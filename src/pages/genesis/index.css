@@ -1,0 +1,248 @@
+.halo-genesis {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.halo-genesis .bridge-con {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.halo-genesis .bridge-top .top-title {
+  height: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2b2b2b;
+  line-height: 44px;
+}
+.halo-genesis .bridge-top .top-text {
+  width: 558px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 22px;
+}
+.halo-genesis .bridge-cen {
+  display: flex;
+  margin-top: 31px;
+}
+.halo-genesis .bridge-cen .cen-left {
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 200px;
+  height: 914px;
+  padding: 41px 30px;
+  padding-right: 0;
+  background: #fff6f7;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.halo-genesis .bridge-cen .cen-left .cen-left-box1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #807677;
+  line-height: 22px;
+}
+.halo-genesis .bridge-cen .cen-left .cen-left-box {
+  margin-top: 40px;
+}
+.halo-genesis .bridge-cen .cen-left .box-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #807677;
+  line-height: 16px;
+}
+.halo-genesis .bridge-cen .cen-left .box-con {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b2b2b;
+  line-height: 21px;
+}
+.halo-genesis .bridge-cen .cen-left .bridge-side {
+  width: 139px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.halo-genesis .bridge-cen .cen-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 914px;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #fff6f7;
+  padding: 60px 240px;
+}
+.halo-genesis .bridge-cen .cen-right .right-change {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 500px;
+  height: 172px;
+  background: #fff6f7;
+  border-radius: 4px;
+}
+.halo-genesis .bridge-cen .cen-right .right-change .change-title {
+  font-size: 16px;
+  color: #2b2b2b;
+  line-height: 19px;
+  font-weight: 600;
+}
+.halo-genesis .bridge-cen .cen-right .right-change .change-bal {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #807677;
+  line-height: 22px;
+}
+.halo-genesis .bridge-cen .cen-right .right-change .change-num {
+  margin-top: 7px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #2b2b2b;
+  line-height: 43px;
+}
+.halo-genesis .bridge-cen .cen-right .form-hd {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #b5b1b1;
+  line-height: 22px;
+}
+.halo-genesis .bridge-cen .cen-right .right-form {
+  margin-top: 30px;
+  width: 100%;
+}
+.halo-genesis .bridge-cen .cen-right .right-form .form-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #b5b1b1;
+  line-height: 22px;
+}
+.halo-genesis .bridge-cen .cen-right .right-form-wrap {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+}
+.halo-genesis .bridge-cen .cen-right .right-form-wrap .right-form.right-form:nth-last-child(1) {
+  margin-left: 20px;
+}
+.halo-genesis .bridge-cen .cen-right .right-sel {
+  width: 100%;
+}
+.halo-genesis .bridge-cen .cen-right .right-sel .ant-select-selector {
+  height: 44px;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ffd2d5;
+}
+.halo-genesis .bridge-cen .cen-right .right-sel .ant-select-selection-item {
+  height: 44px;
+  line-height: 44px;
+}
+.halo-genesis .bridge-cen .cen-right .right-inp-wrap {
+  position: relative;
+  width: 500px;
+  height: 50px;
+}
+.halo-genesis .bridge-cen .cen-right .right-inp-ext {
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 262px;
+  border-left: 1px solid #ffd2d5;
+}
+.halo-genesis .bridge-cen .cen-right .ext-text1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 19px;
+  margin-left: 40px;
+}
+.halo-genesis .bridge-cen .cen-right .ext-text2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b1232c;
+  line-height: 19px;
+  margin-right: 40px;
+  margin-left: 13px;
+}
+.halo-genesis .bridge-cen .cen-right .right-inp {
+  height: 44px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ffd2d5;
+}
+.halo-genesis .bridge-cen .cen-right .form-box {
+  box-sizing: border-box;
+  width: 240px;
+  height: 105px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ffd2d5;
+  padding: 10px 15px;
+}
+.halo-genesis .bridge-cen .cen-right .form-box-tp {
+  display: flex;
+  align-items: center;
+}
+.halo-genesis .bridge-cen .cen-right .form-box-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+.halo-genesis .bridge-cen .cen-right .form-box-text {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2b2b2b;
+  line-height: 19px;
+}
+.halo-genesis .bridge-cen .cen-right .form-box-sel {
+  width: 20px;
+  height: 20px;
+}
+.halo-genesis .bridge-cen .cen-right .form-btn {
+  margin-top: 10px;
+  margin-left: 27px;
+}
+.halo-genesis .bridge-cen .cen-right .form-box-bt {
+  margin-top: 10px;
+  padding: 11px 0;
+  width: 100%;
+  border-top: 1px solid #ffd2d5;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ccc;
+  line-height: 22px;
+}
+.halo-genesis .bridge-cen .cen-right .con-btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.halo-genesis .bridge-cen .cen-right .right-bt {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b5b1b1;
+  line-height: 20px;
+}
+.halo-genesis .bridge-cen .cen-right .mb5 {
+  margin-bottom: 5px;
+}
+.halo-genesis .bridge-cen .cen-right .mb20 {
+  margin-bottom: 20px;
+}
+.halo-genesis .bridge-cen .cen-right .gen-btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}

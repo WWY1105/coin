@@ -21,6 +21,7 @@ export default {
         HaloFooter
     },
     mounted() {
+        let that=this;
         var PixelRatio = 1 / window.devicePixelRatio;
         console.log(window.devicePixelRatio); //像素比
         document.write(
@@ -37,7 +38,7 @@ export default {
             var html = document.getElementsByTagName("html")[0];
             //获取屏幕宽度
             var pageWidth = html.getBoundingClientRect().width;
-            console.log(pageWidth);
+         
             html.style.fontSize = pageWidth / 15 + "px";
         }
         setSize();
@@ -49,7 +50,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
 @import url('./assets/css/index.less');
 
 #app,
@@ -57,8 +57,6 @@ body,
 html {
     padding: 0;
     margin: 0;
-=======
-#app {
    
 }
 .flexStart{
@@ -66,8 +64,18 @@ html {
     justify-content: flex-start;
     align-items: center;
 }
+.flexCenter{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.flexColumn{
+    flex-direction:column;
+}
+.flexWrap{
+    flex-wrap:wrap;
+}
 .w100{
->>>>>>> eeda406bc0e82d64780c2bb2023fc6b6b62135c2
     width: 100%;
 }
 </style>

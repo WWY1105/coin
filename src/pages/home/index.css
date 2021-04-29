@@ -17,7 +17,7 @@
   z-index: -1;
 }
 .halo-home .home-con {
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   padding-top: 40px;
 }
@@ -45,12 +45,20 @@
 .halo-home .guide-con {
   box-sizing: border-box;
   display: flex;
-  width: 100%;
+  width: 1200px;
   height: 225px;
   background: #2b2b2b;
   border-radius: 10px;
   padding-left: 43px;
   padding-right: 27px;
+  position: relative;
+}
+.halo-home .guide-con .bg_light {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: 137px;
 }
 .halo-home .guide-con .guide-card {
   flex: 1;
@@ -98,6 +106,10 @@
   border-radius: 4px;
   color: #fff;
   border: none;
+  font-size: 16px;
+  line-height: 44px;
+  box-sizing: border-box;
+  padding: 0;
 }
 .halo-home .guide-con .guide-card2 .click-btn2 {
   margin-top: 80px;
@@ -107,6 +119,10 @@
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.4);
   border-color: rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+  line-height: 44px;
+  box-sizing: border-box;
+  padding: 0;
 }
 .halo-home .bridge-con-wrap {
   position: relative;
@@ -159,6 +175,7 @@
 }
 .halo-home .bridge-con .bridge-hd .bridge-text {
   margin-top: 20px;
+  width: 731px;
   height: 66px;
   font-size: 16px;
   line-height: 22px;
@@ -179,17 +196,17 @@
 }
 .halo-home .bridge-con .bridge-bt .con-btn {
   margin-top: -22px;
+  font-size: 16px;
 }
 .halo-home .down-wrap {
   margin-top: 120px;
   width: 100%;
-  height: 370px;
   background-color: #fff6f7;
 }
 .halo-home .down-wrap .down-con {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
 }
 .halo-home .down-wrap .down-title {
@@ -239,7 +256,6 @@
 }
 .halo-home .down-wrap .down-line {
   margin: 40px 0;
-  margin-left: 66px;
   width: 30px;
   display: flex;
   flex-direction: column;
@@ -257,24 +273,40 @@
   color: #aaa;
   line-height: 36px;
 }
-.halo-home .down-wrap .down-right {
-  margin-left: 62px;
-}
 .halo-home .down-wrap .hashpay-img {
   width: 459px;
+  margin-top: 50px;
 }
-@media screen and (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   .halo-home {
     padding: 0;
   }
   .halo-home .guide-con {
     flex-wrap: wrap;
-    height: 100%;
+    height: 100vh;
+    width: unset;
     flex-direction: column;
     border-radius: 0;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .halo-home .guide-con .bg_light {
+    width: 4.76rem;
+    height: 4.64rem;
+  }
+  .halo-home .guide-con .guide-card-line {
+    width: 0.32rem;
+    margin: 0.36rem 0;
+    height: 1.72rem;
+  }
+  .halo-home .guide-con .guide-card {
+    height: fit-content;
+    padding: 0;
+    flex: unset;
   }
   .halo-home .guide-con .guide-card.guide-card2 {
     width: 100%;
+    flex: unset;
   }
   .halo-home .guide-con .guide-card.guide-card2 .click-btn {
     width: 5.2rem;
@@ -282,6 +314,7 @@
     background: #B1232C;
     border-radius: 0.16rem;
     font-size: 0.64rem;
+    margin-top: 0;
   }
   .halo-home .guide-con .guide-card.guide-card2 .click-btn2 {
     width: 5.2rem;
@@ -289,7 +322,8 @@
     border-radius: 0.16rem;
     opacity: 0.1;
     font-size: 0.64rem;
-    color: rgba(255, 255, 255);
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0;
   }
   .halo-home .guide-con .guide-card .guide-title2 {
     font-size: 0.72rem;
@@ -301,39 +335,56 @@
     font-weight: 600;
     line-height: 1.44rem;
     margin-bottom: 0.48rem;
+    margin-top: 1.08rem;
   }
   .halo-home .guide-con .guide-card .guide-text {
     font-size: 0.64rem;
     font-weight: 400;
     line-height: 0.88rem;
   }
-  .halo-home .guide-con .guide-card .guide-text2,
-  .halo-home .guide-con .guide-card .guide-text3 {
+  .halo-home .guide-con .guide-card .guide-text2 {
     font-size: 0.64rem;
     font-weight: 600;
     line-height: 0.88rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 0.16rem solid rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    margin-bottom: 1.6rem;
+  }
+  .halo-home .guide-con .guide-card .guide-text3 {
+    font-size: 0.56rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 0.8rem;
   }
   .halo-home .section {
     position: relative;
   }
   .halo-home .home-con {
+    width: 100%;
     padding: 0 0.8rem;
   }
   .halo-home .m_bg_2 {
     position: fixed;
     top: 0;
     right: 0;
+    height: 5.64rem;
+    width: 4.04rem;
   }
   .halo-home .m_bg_1 {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 15rem;
+    height: 11.76rem;
   }
   .halo-home .m_bg_system {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 99;
+    height: 8.88rem;
+    width: 12.48rem;
   }
   .halo-home .introduce-con .introduce-word {
     padding-top: 4.66rem;
@@ -354,5 +405,101 @@
     color: #807677;
     line-height: 0.88rem;
     margin-top: 0.93rem;
+  }
+  .halo-home .section3 {
+    position: relative;
+  }
+  .halo-home .section3 .m_bg_3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 14.16rem;
+    height: 4.84rem;
+  }
+  .halo-home .section3 .bridge-con-wrap {
+    padding: 0 0.8rem;
+  }
+  .halo-home .section3 .bridge-con-wrap .bridge-con {
+    padding-bottom: 0.8rem;
+  }
+  .halo-home .section3 .bridge-con-wrap .bridge-con .bridge-hd .bridge-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    line-height: 1.44rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0;
+  }
+  .halo-home .section3 .bridge-con-wrap .bridge-con .bridge-hd .bridge-title-line {
+    width: 3.6rem;
+    height: 0.16rem;
+    background: #2B2B2B;
+    margin-bottom: 0.8rem;
+  }
+  .halo-home .section3 .bridge-con-wrap .bridge-con .bridge-hd .bridge-text {
+    font-size: 0.64rem;
+    font-weight: 400;
+    color: #2B2B2B;
+    line-height: 0.88rem;
+    margin-bottom: 1.16rem;
+    margin-top: 0;
+    height: fit-content;
+  }
+  .halo-home .section3 .bridge-con-wrap .bridge-con .bridge-hd .bridge-text .introduce-text-red {
+    color: #2B2B2B;
+    font-weight: normal;
+  }
+  .halo-home .section3 .bridge-con-wrap .bridge-con .bridge-bt .bg2-img {
+    width: 100%;
+    height: 8.04rem;
+    margin-bottom: 1rem;
+  }
+  .halo-home .section3 .bridge-con-wrap .bridge-con .bridge-bt .con-btn {
+    width: 6.4rem;
+    height: 1.76rem;
+    background: #B1232C;
+    border-radius: 0.16rem;
+    margin: 0;
+    font-size: 0.64rem;
+  }
+  .halo-home .down-wrap .down-con {
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+  }
+  .halo-home .down-wrap .down-con .down-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 1.44rem;
+    background-color: #B1232C;
+    width: 100%;
+    padding: 0.8rem;
+    position: static;
+  }
+  .halo-home .down-wrap .down-con .tabBox {
+    background-color: #B1232C;
+    padding: 0 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  .halo-home .down-wrap .down-con .tabBox .content {
+    width: 100%;
+    border-radius: 0.16rem;
+    border: 0.04rem solid #FFFFFF;
+    background-color: #fff;
+    height: 1.76rem;
+  }
+  .halo-home .down-wrap .down-con .tabBox .content .item {
+    height: 100%;
+    width: 50%;
+  }
+  .halo-home .down-wrap .down-con .tabBox .content .item.active {
+    background-color: #B1232C;
+  }
+  .halo-home .down-wrap .down-con .tabBox .content .item.leftItem {
+    border-radius: 0.16rem 0 0 0.16rem;
+  }
+  .halo-home .down-wrap .down-con .tabBox .content .item.rightItem {
+    border-radius: 0 0.16rem 0.16rem 0;
   }
 }

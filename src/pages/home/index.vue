@@ -1,20 +1,21 @@
 <template>
 <div class="halo-home container-fluid">
     <full-page ref="fullpage" :options="options" id="fullpage">
+        <!-- 第一屏 -->
         <div class="section section1">
             <img class="bg1-img d-none d-lg-block " :src="bg1Img" />
             <img class="gold-coins-img d-none d-lg-block " :src="goldCoinsImg" />
             <!-- phone -->
-            <img :src="m_bg_2" alt="" class="m_bg_2 d-block d-lg-none d-xl-block">
-            <img :src="m_bg_1" alt="" class="m_bg_1 d-block d-lg-none d-xl-block">
-            <img :src="m_bg_system" alt="" class="m_bg_system d-block d-lg-none d-xl-block">
+            <img :src="m_bg_2" alt="" class="m_bg_2 d-sm-block d-lg-none">
+            <img :src="m_bg_1" alt="" class="m_bg_1 d-sm-block d-lg-none">
+            <img :src="m_bg_system" alt="" class="m_bg_system d-sm-block d-lg-none">
             <div class="home-con">
                 <div class="introduce-con">
-                    <div class="introduce-word">
-                        <div class="introduce-title">HALO Infinite Financial System</div>
+                    <div class="introduce-word row">
+                        <div class="introduce-title col-12 col-lg-10">HALO Infinite Financial System</div>
                         <!-- phone -->
-                        <span class="midline d-block d-lg-none d-xl-block"></span>
-                        <div class="introduce-text">
+                        <span class="midline d-sm-block d-lg-none"></span>
+                        <div class="introduce-text col-12 col-lg-6">
                             HALO INFINITI Financial System - <strong>HALO NETWORK </strong>
                             is an efficient blockchain network system. HALO NETWORK provide one stop
                             integration of DeFi application level with decentralized, energy
@@ -25,61 +26,81 @@
                 </div>
             </div>
         </div>
+        <!-- 第二屏 -->
         <div class="section">
             <!-- <div class="home-con"> -->
-            <div class="guide-con d-flex">
-                <div class="guide-card guide-card1">
-                    <div class="guide-title">Build your DAPP</div>
-                    <div class="guide-text">Explore the world of DEFI projects with</div>
-                    <div class="guide-text2">3 easy steps.</div>
-                </div>
-                <div class="guide-card guide-card2">
-                    <div class="guide-title2">Build your DAPP</div>
-                    <div class="row">
-                        <div class="guide-text3 col-sm-6 col-lg-12">
-                            <div>Support</div>
-                            <div>HashPai & MATEMASK Wallet</div>
-                        </div>
-                        <div class="col-sm-6 col-lg-12">
-                            <Button type="primary" class="btn click-btn" @click="jumpTo('down-wrap')">
-                                CLICK
-                            </Button>
-                        </div>
+            <div class="flexCenter flexColumn">
+                <div class="guide-con d-flex">
+                    <img :src="bg_light" alt="" class="bg_light" />
+                    <div class="guide-card guide-card1">
+                        <div class="guide-title">Build your DAPP</div>
+                        <div class="guide-text">Explore the world of DEFI projects with</div>
+                        <div class="guide-text2">3 easy steps.</div>
                     </div>
-                </div>
-                <div class="guide-card guide-card2">
-                    <div class="guide-title2">Get assets</div>
-                    <div class="row">
-                        <div class="guide-text3 col-sm-6 col-lg-12">
-                            <div class="guide-text3">
-                                <div>Convert selected coins via</div>
-                                <div>HALO Bridge</div>
+
+                    <div class="guide-card guide-card2">
+                        <div class="guide-title2">Build your DAPP</div>
+                        <div class="row">
+                            <div class="guide-text3 col-7 col-lg-12">
+                                <div>Support</div>
+                                <div>HashPai & MATEMASK Wallet</div>
+                            </div>
+                            <div class="col-5 col-lg-12 flexStart">
+                                <Button type="primary" class="btn click-btn float-sm-right" @click="jumpTo('down-wrap')">
+                                    CLICK
+                                </Button>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-12">
-                            <Button type="primary" class="btn click-btn" @click="jumpTo('bridge-con')">
-                                CLICK
-                            </Button>
+                    </div>
+                    <!-- phone -->
+                    <img :src="m_next" class="guide-card-line d-sm-block d-lg-none" alt="">
+                    <div class="guide-card guide-card2">
+                        <div class="guide-title2">Get assets</div>
+                        <div class="row">
+                            <div class="col-7 col-lg-12">
+                                <div class="guide-text3">
+                                    <div>Convert selected coins via</div>
+                                    <div>HALO Bridge</div>
+                                </div>
+                            </div>
+                            <div class="col-5 col-lg-12 flexStart">
+                                <Button type="primary" class="btn click-btn float-sm-right" @click="jumpTo('bridge-con')">
+                                    CLICK
+                                </Button>
+                            </div>
                         </div>
                     </div>
-                    </div>
+                    <!-- phone -->
+                    <img :src="m_next" class="guide-card-line d-sm-block d-lg-none" alt="">
                     <div class="guide-card guide-card2">
-                        <div class="guide-title2">Explore projects on HALO System</div>
-                        <Button type="primary" class="click-btn2">
-                            Stay Tuned...
-                        </Button>
+                        <div class="row">
+                            <div class="guide-title2 col-7 col-lg-12 ">Explore projects on HALO System</div>
+                            <div class="col-5 col-lg-12 flexStart">
+                                <Button type="primary" class="click-btn2">
+                                    Stay Tuned...
+                                </Button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- </div> -->
             </div>
-            <div class="section">
+            <!-- </div> -->
+        </div>
+        <!-- 第三屏 -->
+        <div class="section section3">
+            <!-- phone -->
+            <img class="m_bg_3 d-sm-block d-lg-none" :src="m_bg_3" />
+            <div class="flexCenter flexColumn">
                 <div class="bridge-con-wrap">
                     <img class="home-left-img" :src="homeLeftImg" />
                     <img class="home-left-img2" :src="homeLeftImg" />
+
                     <div class="bridge-con" id="bridge-con">
                         <div class="bridge-hd">
-                            <div class="bridge-line"></div>
+                            <div class="bridge-line d-none d-lg-block"></div>
                             <div class="bridge-title">HALO Bridge</div>
+                            <!-- phone -->
+                            <div class="bridge-title-line d-sm-block d-lg-none"></div>
                             <div class="bridge-text">
                                 The HALO Bridge is a cross-chain bridging service that aims to increase
                                 interoperability between different blockchains. HALO NETWORK was created
@@ -91,7 +112,10 @@
                             </div>
                         </div>
                         <div class="bridge-bt">
-                            <img class="bg2-img" :src="bg2Img" />
+                            <img class="bg2-img d-sm-none d-md-block d-lg-block" :src="bg2Img" />
+                            <!-- phone -->
+                            <img class="bg2-img d-sm-block d-md-none d-lg-none" :src="m_bg_bridge" />
+
                             <Button type="primary" class="con-btn click-btn">
                                 CONNECT
                             </Button>
@@ -99,33 +123,48 @@
                     </div>
                 </div>
             </div>
-            <div class="section">
-                <div class="down-wrap" id="down-wrap">
+        </div>
+        <!-- 444444 -->
+        <div class="section">
+            <div class="down-wrap" id="down-wrap">
+                <div class="flexCenter flexColumn">
                     <div class="down-con">
                         <div class="down-title">GET YOUR WALLET</div>
-                        <div class="down-left">
-                            <img class="app-ex-img" :src="appExImg" />
-                            <div class="down-left-sup">
-                                <img class="mm-logo-img" :src="mmLogoImg" />
-                                <div class="sup-text">Supported</div>
-                                <div>
-                                    <img class="down-img" :src="iconAppleLogoImg" />
-                                    <img class="down-img" :src="iconGoogleLogoImg" />
-                                    <img class="down-img" :src="iconChromeLogoImg" />
+                        <!-- phone -->
+                        <div class="tabBox d-sm-block d-md-none d-lg-none">
+                            <div class="content flexCenter">
+                                <div class="item flexCenter leftItem active">
+                                    <img :src="m_mmlogo_s_w" alt="" class="icon">
+                                </div>
+                                <div class="item flexCenter rightItem">
+                                    <img :src="m_hashpay_s_b" alt="" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <div class="down-line">
-                            <div class="down-line-l"></div>
-                            <div class="down-line-t">or</div>
-                            <div class="down-line-l"></div>
-                        </div>
-                        <div class="down-right">
-                            <img class="hashpay-img" :src="hashpayImg" />
+                        <div class="row">
+                            <!-- 左边 -->
+                            <div class="down-left col-12 col-lg-6">
+                                <img class="app-ex-img" :src="appExImg" />
+                                <div class="down-left-sup">
+                                    <img class="mm-logo-img" :src="mmLogoImg" />
+                                    <div class="sup-text">Supported</div>
+                                    <div class="flexStart flexWrap">
+                                        <img class="down-img" :src="iconAppleLogoImg" />
+                                        <img class="down-img" :src="iconGoogleLogoImg" />
+                                        <img class="down-img" :src="iconChromeLogoImg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 右边 -->
+                            <div class="down-right col-12 col-lg-6">
+                                <img class="hashpay-img" :src="hashpayImg" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
     </full-page>
 
 </div>
@@ -135,6 +174,7 @@
 // 这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
 
 // import { Button } from 'antd';
+import bg_light from '@/assets/images/bg_light.png';
 import bg2Img from '@/assets/images/bg2.png';
 import goldCoinsImg from '@/assets/images/gold-coins.png';
 import mmLogoImg from '@/assets/images/mm-logo.png';
@@ -147,12 +187,23 @@ import homeLeftImg from '@/assets/images/home-left.png';
 import bg1Img from '@/assets/images/bg1.jpg';
 import m_bg_2 from '@/assets/images/phone/m_bg_2.png'
 import m_bg_system from '@/assets/images/phone/m_bg_system.png';
-import m_bg_1 from '@/assets/images/phone/m_bg_1.png'
+import m_bg_1 from '@/assets/images/phone/m_bg_1.png';
+import m_next from '@/assets/images/phone/m_next.png';
+import m_bg_bridge from '@/assets/images/phone/m_bg_bridge.png';
+import m_bg_3 from '@/assets/images/phone/m_bg_3.png';
+import m_mmlogo_s_w from '@/assets/images/phone/m_mmlogo_s_w.png';
+import m_hashpay_s_b from '@/assets/images/phone/m_hashpay_s_b.png'
 export default {
     components: {},
     // 定义属性
     data() {
         return {
+            m_hashpay_s_b: m_hashpay_s_b,
+            m_mmlogo_s_w: m_mmlogo_s_w,
+            bg_light: bg_light,
+            m_bg_3: m_bg_3,
+            m_bg_bridge: m_bg_bridge,
+            m_next: m_next,
             m_bg_1: m_bg_1,
             m_bg_system: m_bg_system,
             m_bg_2: m_bg_2,
@@ -167,6 +218,7 @@ export default {
             hashpayImg: hashpayImg,
             homeLeftImg: homeLeftImg,
             options: {
+                scrollOverflow: false,
                 //字体是否随着窗口缩放而缩放
                 resize: true,
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
@@ -178,6 +230,7 @@ export default {
                 // autoScrolling: false,
                 //每一页幻灯片的内容是否垂直居中
                 verticalCentered: true,
+                afterLoad: this.afterLoad,
 
             }
         }
@@ -196,6 +249,12 @@ export default {
                 block: 'center',
                 inline: 'nearest'
             });
+        },
+        afterLoad: function (origin, destination, direction) {
+            // console.log(origin, destination, direction);
+            let index = destination.index;
+            this.bus.$emit('pageChange', index)
+
         }
     },
     // 生命周期 - 创建完成（可以访问当前this实例）
@@ -204,8 +263,23 @@ export default {
     },
     // 生命周期 - 挂载完成（可以访问DOM元素）
     mounted() {
-        // this.$refs.fullpage.api.destroy('all');
+        const that = this;
 
+        window.addEventListener("resize", function () {
+            var html = document.getElementsByTagName("html")[0];
+            //获取屏幕宽度
+            var pageWidth = html.getBoundingClientRect().width;
+            console.log('宽度' + pageWidth);
+            if (pageWidth < 800) {
+                that.$refs.fullpage.init();
+                that.$refs.fullpage.api.reBuild();
+                that.$refs.fullpage.api.setAutoScrolling(true);
+            } else {
+
+                that.$refs.fullpage.api.destroy('all');
+
+            }
+        }, false); //自动跳转不需要刷新页面
     },
     beforeCreate() {}, // 生命周期 - 创建之前
     beforeMount() {}, // 生命周期 - 挂载之前

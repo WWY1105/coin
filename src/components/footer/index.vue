@@ -1,5 +1,5 @@
 <template>
-<div class="halo-footer">
+<div class="halo-footer flexCenter">
     <div class="home-bt-con">
         <div class="bt-text">©2021 - 2022 HALO OS.All rights reserved.</div>
         <div>

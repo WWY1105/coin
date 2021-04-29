@@ -31,6 +31,7 @@
   line-height: 68px;
   background: none !important;
   color: #2b2b2b !important;
+  padding: 0;
 }
 .halo-header .navbar .nav-item {
   font-size: 16px;
@@ -62,8 +63,7 @@
   background: rgba(255, 255, 255, 0.5) !important;
 }
 .halo-header .navbar .nav-link {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 20px;
 }
 @media screen and (min-width: 1440px) {
   .halo-header .bg1-img {
@@ -99,6 +99,13 @@
     flex-direction: column;
     width: 100%;
     z-index: 999;
+    height: unset;
+  }
+  .halo-header .logo-img {
+    width: 3.44rem;
+    height: 1.2rem;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
   }
   .halo-header .ant-btn-primary {
     width: 160px;
@@ -110,7 +117,11 @@
     background: none;
   }
   .halo-header .navbar {
-    width: 0.8rem;
-    height: 0.56rem;
+    padding: 0;
+  }
+  .halo-header .navbar .navbar-toggler {
+    padding: 0;
+    border: none;
+    margin-right: 0.8rem;
   }
 }

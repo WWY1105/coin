@@ -1,10 +1,6 @@
-import { Button, Input } from 'antd';
-import bridgeSide from '@assets/images/bridge-side.png';
-import bridgeIcHalo from '@assets/images/bridge-ic-halo.png';
-import './index.less';
-function Genesis() {
-    return (
-        <div class="halo-genesis">
+
+<template>
+          <div class="halo-genesis">
             <div class="bridge-con">
                 <div class="bridge-top">
                     <div class="top-title">HALO Genesis</div>
@@ -36,13 +32,13 @@ function Genesis() {
                             <div class="box-title">HOlppool</div>
                             <div class="box-con">10000000 ETH</div>
                         </div>
-                        <img class="bridge-side" src={bridgeSide}></img>
+                        <img class="bridge-side" :src="bridgeSide"/>
                     </div>
                     <div class="cen-right">
                         <div class="right-change">
                             <div>
                                 <div class="change-title">
-                                    <img class="form-box-icon" src={bridgeIcHalo}></img>HALO
+                                    <img class="form-box-icon" :src="bridgeIcHalo"/>HALO
                                     Network
                                 </div>
                                 <div class="change-bal">HRC-ETH Balance</div>
@@ -98,7 +94,22 @@ function Genesis() {
                 </div>
             </div>
         </div>
-    );
-}
+  
+</template>
 
-export default Genesis;
+<script>
+// import { Button, Input } from 'antd';
+import bridgeSide from '@/assets/images/bridge-side.png';
+import bridgeIcHalo from '@/assets/images/bridge-ic-halo.png';
+export default {
+    data(){
+        return {
+            bridgeSide:bridgeSide,
+            bridgeIcHalo:bridgeIcHalo
+        }
+    }
+}
+</script>
+<style lang="less" scoped>
+@import './index.less';
+</style>

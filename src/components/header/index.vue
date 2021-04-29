@@ -3,7 +3,7 @@
     <header class="home-hd">
         <div>
             <!-- {changeMenu.bind(this, { key: 'home' })} -->
-            <img class="logo-img" :src="logoImg" @click="changeMenu"></img>
+            <img class="logo-img" :src="logoImg" @click="changeMenu"/>
         </div>
         <!-- <Menu mode="horizontal" @click="changeMenu" class="hd-menu" theme="dark" selectedKeys={[menu]}>
             <SubMenu title="WALLET" class="menu-item" key="WALLET">
@@ -46,7 +46,7 @@
             </div>
         </nav>
     </header>
-    
+    <img class="bg1-img" :src='bg1Img'/>
 </div>
 </template>
 
@@ -63,7 +63,13 @@ export default {
         }
     },
     methods:{
+<<<<<<< HEAD
         changeMenu(){}
+=======
+        changeMenu(){
+            
+        }
+>>>>>>> eeda406bc0e82d64780c2bb2023fc6b6b62135c2
     }
 }
 </script>

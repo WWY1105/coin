@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-    <div class="">
+    <div class="contiainer-fiuld">
         <HaloHeader></HaloHeader>
         <!-- <div class="container"> -->
         <router-view />
@@ -49,6 +49,7 @@ export default {
 </script>
 
 <style>
+<<<<<<< HEAD
 @import url('./assets/css/index.less');
 
 #app,
@@ -56,6 +57,17 @@ body,
 html {
     padding: 0;
     margin: 0;
+=======
+#app {
+   
+}
+.flexStart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.w100{
+>>>>>>> eeda406bc0e82d64780c2bb2023fc6b6b62135c2
     width: 100%;
 }
 </style>

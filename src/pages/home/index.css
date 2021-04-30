@@ -209,6 +209,9 @@
   width: 1200px;
   margin: 0 auto;
 }
+.halo-home .down-wrap .down-con .hide {
+  display: block;
+}
 .halo-home .down-wrap .down-title {
   position: absolute;
   top: -20px;
@@ -272,6 +275,9 @@
   font-weight: bold;
   color: #aaa;
   line-height: 36px;
+}
+.halo-home .down-wrap .down-right {
+  display: block;
 }
 .halo-home .down-wrap .hashpay-img {
   width: 459px;
@@ -359,6 +365,27 @@
   }
   .halo-home .section {
     position: relative;
+  }
+  .halo-home .m_scroll {
+    position: absolute;
+    bottom: 0.36rem;
+    width: 0.88rem;
+    height: 0.8rem;
+    left: 50%;
+    margin-left: -0.44rem;
+    z-index: 9999;
+    animation: moveTopDown 0.8s infinite;
+  }
+  @keyframes moveTopDown {
+    0% {
+      bottom: 0.36rem;
+    }
+    50% {
+      bottom: 0.46rem;
+    }
+    100% {
+      bottom: 0.56rem;
+    }
   }
   .halo-home .home-con {
     width: 100%;
@@ -462,10 +489,21 @@
     margin: 0;
     font-size: 0.64rem;
   }
+  .halo-home .down-wrap {
+    background: #fff;
+  }
   .halo-home .down-wrap .down-con {
     height: 100vh;
     flex-direction: column;
     width: 100%;
+    position: relative;
+  }
+  .halo-home .down-wrap .down-con .m_bg_4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12.52rem;
+    height: 2.76rem;
   }
   .halo-home .down-wrap .down-con .down-title {
     font-size: 1.2rem;
@@ -493,6 +531,10 @@
     height: 100%;
     width: 50%;
   }
+  .halo-home .down-wrap .down-con .tabBox .content .item .icon {
+    width: 4.84rem;
+    height: 0.96rem;
+  }
   .halo-home .down-wrap .down-con .tabBox .content .item.active {
     background-color: #B1232C;
   }
@@ -501,5 +543,125 @@
   }
   .halo-home .down-wrap .down-con .tabBox .content .item.rightItem {
     border-radius: 0 0.16rem 0.16rem 0;
+  }
+  .halo-home .down-wrap .down-con .downBox {
+    padding: 0 0.8rem;
+  }
+  .halo-home .down-wrap .down-con .downBox .hide {
+    display: none;
+  }
+  .halo-home .down-wrap .down-con .down-left .app-ex-img {
+    height: 12.84rem;
+    width: 6.4rem;
+    margin-top: 2rem;
+  }
+  .halo-home .down-wrap .down-con .down-left .down-left-sup {
+    width: 5.04rem;
+    height: 2.6rem;
+    margin-bottom: 0.9rem;
+    margin-top: 2rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+  }
+  .halo-home .down-wrap .down-con .down-left .down-left-sup .m_mm_logo {
+    width: 5.04rem;
+    height: 2.6rem;
+  }
+  .halo-home .down-wrap .down-con .down-left .sup-text {
+    font-size: 0.56rem;
+    font-weight: 400;
+    color: #807677;
+    line-height: 0.64rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.9rem;
+    text-align: center;
+  }
+  .halo-home .down-wrap .down-con .down-left .down-img {
+    width: 6.4rem;
+    height: 1.76rem;
+    border-radius: 0;
+    margin-bottom: 0.4rem;
+    margin-right: 0;
+    margin-left: 0.6rem;
+  }
+  .halo-home .down-wrap .down-con .down-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .halo-home .down-wrap .down-con .down-right .hashpay-img {
+    width: 11.4rem;
+    height: 12.84rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    margin-right: 0;
+  }
+  .halo-home .down-wrap .down-con .down-right .click-btn {
+    width: 6.4rem;
+    height: 1.76rem;
+    background: #B1232C;
+    border-radius: 0.16rem;
+    margin: 0;
+    font-size: 0.64rem;
+    color: #fff;
+  }
+  .halo-home .section5 .footerPart {
+    height: 100vh;
+  }
+  .halo-home .section5 .footerPart .topPart {
+    flex: 1;
+    padding: 0 0.8rem;
+  }
+  .halo-home .section5 .footerPart .topPart .m_connectlogo {
+    width: 4.28rem;
+    height: 4.88rem;
+    margin-bottom: 1.56rem;
+  }
+  .halo-home .section5 .footerPart .topPart .line {
+    width: 3.6rem;
+    height: 0.16rem;
+    background: #2B2B2B;
+    margin-bottom: 1.2rem;
+  }
+  .halo-home .section5 .footerPart .topPart .minText {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    line-height: 1.44rem;
+  }
+  .halo-home .section5 .footerPart .lastPart {
+    height: 8.56rem;
+    background: #B1232C;
+    width: 100%;
+    padding: 0 2.2rem;
+    position: relative;
+  }
+  .halo-home .section5 .footerPart .lastPart .iconsBox {
+    margin-top: -1.16rem;
+  }
+  .halo-home .section5 .footerPart .lastPart .footerText {
+    font-size: 0.56rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.8rem;
+    position: absolute;
+    left: 1.8rem;
+    bottom: 0.8rem;
+  }
+  .halo-home .section5 .footerPart .lastPart .item img {
+    width: 2.32rem;
+    height: 2.32rem;
+    margin-bottom: 0.16rem;
+  }
+  .halo-home .section5 .footerPart .lastPart .item p {
+    font-size: 0.64rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.88rem;
   }
 }

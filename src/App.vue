@@ -72,8 +72,21 @@ html {
 .flexColumn{
     flex-direction:column;
 }
+.flexEnd{
+      display:flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+.flexSpace{
+      display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
 .flexWrap{
     flex-wrap:wrap;
+}
+.flex{
+    display: flex;
 }
 .w100{
     width: 100%;

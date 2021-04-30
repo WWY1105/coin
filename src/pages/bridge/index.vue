@@ -1,5 +1,6 @@
 <template>
 <div class="halo-bridge">
+    <img :src="m_bg_2" alt="" class="m_bg_2 d-sm-block d-lg-none">
     <div class="bridge-con container-lg">
         <div class="bridge-top ">
             <div class="top-title">HALO Bridge</div>
@@ -41,25 +42,31 @@
                         </a-select>
                     </div>
                     <div class="right-form-wrap row">
-                        <div class="right-form col-6 col-lg-12">
+                        <div class="right-form pdr col-6 col-lg-12">
                             <div class="form-hd">From</div>
                             <div class="form-box">
-                                <div class="form-box-tp">
-                                    <div class="flexStart">
+                                <div class="form-box-tp row">
+                                    <div class="flexStart col-12 col-lg-6">
                                         <img class="form-box-icon" :src="bridgeMask" />
                                         <div class="form-box-text">{{nick}}</div>
                                     </div>
-                                    <Button type="primary" class="btn-l form-btn">
-                                        CONNECT WALLET
-                                    </Button>
+                                    <div class="col-12 col-lg-6 flexEnd ">
+                                        <Button type="primary" class="btn-l form-btn float-lg-right">
+                                            CONNECT WALLET
+                                        </Button>
+                                    </div>
                                     <!-- <img class="form-box-sel" :src="bridgeSelect" @click="openModal" /> -->
                                 </div>
-                                <!-- <div>
-
-                                    </div> -->
+                                <div class="form-box-bottom  d-none d-lg-block  row">
+                                    <div class="form-box-bottom-item col-lg-6">0X111…11111</div>
+                                    <div class="form-box-bottom-item col-lg-6">
+                                        <span class="label">ETH</span>
+                                        <span class="value">0</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="right-form col-6 col-lg-12">
+                        <div class="right-form pdl col-6 col-lg-12">
                             <div class="form-hd">To</div>
                             <div class="form-box">
                                 <div class="form-box-tp">
@@ -67,7 +74,9 @@
                                     <div class="form-box-text">HALO Network</div>
                                 </div>
                                 <div class="form-box-bt">
-                                    <Input class="bt-inp" placeholder="Enter HALO Wallet address"></Input>
+                                    <Input class="bt-inp d-none d-lg-block" placeholder="Enter HALO Wallet address"></Input>
+                                <!-- phone -->
+                                 <Input class="bt-inp d-sm-block d-lg-none" placeholder="HALO Wallet address"></Input>
                                 </div>
                             </div>
                         </div>
@@ -122,11 +131,12 @@ import bridgeSide from '@/assets/images/bridge-side.png';
 import bridgeIcHalo from '@/assets/images/bridge-ic-halo.png';
 import bridgeMask from '@/assets/images/bridge-mask.png';
 import bridgeSelect from '@/assets/images/bridge-select.png';
-
+import m_bg_2 from '@/assets/images/phone/m_bg_2.png'
 export default {
     components: {},
     data() {
         return {
+            m_bg_2: m_bg_2,
             bridgeSide: bridgeSide,
             bridgeIcHalo: bridgeIcHalo,
             bridgeMask: bridgeMask,

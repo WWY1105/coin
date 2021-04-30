@@ -9,7 +9,7 @@
 .halo-bridge .bridge-con {
   width: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 .halo-bridge .bridge-top .top-title {
   height: 40px;
@@ -85,6 +85,8 @@
   line-height: 22px;
 }
 .halo-bridge .bridge-cen .cen-right .right-form {
+  padding-left: 0;
+  padding-right: 0;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -129,7 +131,6 @@
 .halo-bridge .bridge-cen .cen-right .form-box {
   box-sizing: border-box;
   width: 100%;
-  height: 105px;
   background: #fff;
   border-radius: 4px;
   border: 1px solid #ffd2d5;
@@ -139,6 +140,35 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.halo-bridge .bridge-cen .cen-right .form-box-bottom {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #FFD2D5;
+  margin-top: 12px;
+  display: flex!important;
+  width: 100%;
+  margin-left: 0;
+}
+.halo-bridge .bridge-cen .cen-right .form-box-bottom .form-box-bottom-item {
+  font-size: 16px;
+  font-weight: 600;
+  color: #858585;
+  line-height: 19px;
+  width: 50%;
+}
+.halo-bridge .bridge-cen .cen-right .form-box-bottom .form-box-bottom-item .label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2B2B2B;
+  line-height: 19px;
+}
+.halo-bridge .bridge-cen .cen-right .form-box-bottom .form-box-bottom-item .value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #B1232C;
+  line-height: 19px;
+  margin-left: 10px;
 }
 .halo-bridge .bridge-cen .cen-right .form-box-icon {
   width: 40px;
@@ -253,12 +283,24 @@
 /* 超小屏幕（手机，小于 768px） */
 /* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
 @media (min-width: 300px) and (max-width: 768px) {
+  .none {
+    visibility: hidden;
+  }
   .halo-bridge {
-    background: #fff;
+    background: #fff url(../../assets/images/phone/m_bg_2.png) right top no-repeat;
+    background-size: 4.04rem 5.64rem;
+  }
+  .halo-bridge .m_bg_2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 5.64rem;
+    width: 4.04rem;
   }
   .halo-bridge .bridge-con {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+    padding-top: 0.8rem;
   }
   .halo-bridge .bridge-con .bridge-top .top-title {
     font-size: 1.2rem;
@@ -314,12 +356,85 @@
   .halo-bridge .bridge-con .bridge-cen .cen-right {
     padding: 0.8rem 0;
     border: none;
+    border-radius: 0;
+    padding-top: 0;
+    margin-top: 0.8rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .con-btn {
+    width: 100%;
+    height: 1.76rem;
+    font-size: 0.64rem;
   }
   .halo-bridge .bridge-con .bridge-cen .cen-right .right-form {
     width: 100%;
+    padding-left: 0;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form.right-form:nth-last-child(1) {
+    margin-top: 0;
+    padding-right: 0;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form .right-inp {
+    height: 1.76rem;
+    border-radius: 0.16rem;
+    font-size: 0.64rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    line-height: 0.88rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-bt {
+    width: 100%;
+    font-size: 0.56rem;
+    font-weight: 400;
+    color: #B5B1B1;
+    line-height: 0.8rem;
   }
   .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap {
     width: 100%;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form.pdr {
+    padding-right: 0.24rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form.pdl {
+    padding-left: 0.24rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form .form-box {
+    height: auto;
+    border-radius: 0.16rem;
+    padding: 0.4rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form .form-box .form-box-tp .form-box-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form .form-box .form-box-tp .form-box-text {
+    font-size: 0.56rem;
+    font-weight: 600;
+    color: #2B2B2B;
+    line-height: 0.64rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form .form-box .form-box-tp .btn-l {
+    margin-top: 0.4rem;
+    width: 100%;
+    font-size: 0.48rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 0.68rem;
+    height: 1.4rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form .form-box .form-box-bottom {
+    display: none!important;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form .form-box .form-box-bt {
+    padding-top: 0.56rem;
+    margin-top: 0.4rem;
+  }
+  .halo-bridge .bridge-con .bridge-cen .cen-right .right-form-wrap .right-form .form-box .form-box-bt .bt-inp {
+    font-size: 0.56rem;
+    font-weight: 400;
+    color: #CCCCCC;
+    line-height: 0.64rem;
+    width: 100%;
+    margin-bottom: 0.1rem;
   }
   .halo-bridge .bridge-con .bridge-cen .cen-right .form-hd {
     font-size: 0.64rem;

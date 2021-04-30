@@ -1,5 +1,5 @@
 <template>
-<div class="halo-footer flexCenter">
+<div class="halo-footer flexCenter d-none d-md-block d-lg-block">
     <div class="home-bt-con">
         <div class="bt-text">©2021 - 2022 HALO OS.All rights reserved.</div>
         <div>
@@ -23,6 +23,9 @@ export default {
             btIconTelegram: btIconTelegram,
             btIconMedium: btIconMedium
         }
+    },
+    created(){
+         this.routerName=this.$route.name;
     }
 }
 </script>

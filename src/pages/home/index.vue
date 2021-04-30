@@ -3,6 +3,8 @@
     <full-page ref="fullpage" :options="options" id="fullpage">
         <!-- 第一屏 -->
         <div class="section section1">
+            <!-- phone -->
+             <img src="../../assets/images/phone/m_scroll.png" alt="" class="m_scroll d-sm-block d-lg-none">
             <img class="bg1-img d-none d-lg-block " :src="bg1Img" />
             <img class="gold-coins-img d-none d-lg-block " :src="goldCoinsImg" />
             <!-- phone -->
@@ -28,6 +30,8 @@
         </div>
         <!-- 第二屏 -->
         <div class="section">
+             <!-- phone -->
+             <img src="../../assets/images/phone/m_scroll.png" alt="" class="m_scroll d-sm-block d-lg-none">
             <!-- <div class="home-con"> -->
             <div class="flexCenter flexColumn">
                 <div class="guide-con d-flex">
@@ -88,8 +92,10 @@
         </div>
         <!-- 第三屏 -->
         <div class="section section3">
+             <!-- phone -->
+             <img src="../../assets/images/phone/m_scroll.png" alt="" class="m_scroll d-sm-block d-lg-none">
             <!-- phone -->
-            <img class="m_bg_3 d-sm-block d-lg-none" :src="m_bg_3" />
+            <img class="m_bg_3 d-sm-block d-md-none d-lg-none" :src="m_bg_3" />
             <div class="flexCenter flexColumn">
                 <div class="bridge-con-wrap">
                     <img class="home-left-img" :src="homeLeftImg" />
@@ -112,7 +118,7 @@
                             </div>
                         </div>
                         <div class="bridge-bt">
-                            <img class="bg2-img d-sm-none d-md-block d-lg-block" :src="bg2Img" />
+                            <img class="bg2-img d-none d-sm-none d-md-block d-lg-block" :src="bg2Img" />
                             <!-- phone -->
                             <img class="bg2-img d-sm-block d-md-none d-lg-none" :src="m_bg_bridge" />
 
@@ -125,46 +131,83 @@
             </div>
         </div>
         <!-- 444444 -->
-        <div class="section">
+        <div class="section section4">
+             <!-- phone -->
+             <img src="../../assets/images/phone/m_scroll.png" alt="" class="m_scroll d-sm-block d-lg-none">
             <div class="down-wrap" id="down-wrap">
                 <div class="flexCenter flexColumn">
                     <div class="down-con">
+                        <!-- phone -->
+                        <img :src="m_bg_4" alt="" class="m_bg_4 d-sm-block d-md-none d-lg-none">
                         <div class="down-title">GET YOUR WALLET</div>
                         <!-- phone -->
                         <div class="tabBox d-sm-block d-md-none d-lg-none">
                             <div class="content flexCenter">
-                                <div class="item flexCenter leftItem active">
-                                    <img :src="m_mmlogo_s_w" alt="" class="icon">
+                                <div :class="active==1?'item flexCenter leftItem active':'item flexCenter leftItem'" @click="changeTab(1)">
+                                    <img :src="active==1?m_mmlogo_s_w:m_mmlogo_s_b" alt="" class="icon">
                                 </div>
-                                <div class="item flexCenter rightItem">
-                                    <img :src="m_hashpay_s_b" alt="" class="icon">
+                                <div :class="active==2?'item flexCenter rightItem active':'item flexCenter rightItem'" @click="changeTab(2)">
+                                    <img :src="active==2?m_hashpay_s_w:m_hashpay_s_b" alt="" class="icon">
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row downBox">
                             <!-- 左边 -->
-                            <div class="down-left col-12 col-lg-6">
-                                <img class="app-ex-img" :src="appExImg" />
-                                <div class="down-left-sup">
-                                    <img class="mm-logo-img" :src="mmLogoImg" />
+                            <div :class="active==1?'down-left col-12 col-lg-6':'hide down-left col-12 col-lg-6'">
+                                <img class="app-ex-img d-none d-sm-none d-md-block d-lg-block" :src="appExImg" />
+                                <!-- phone -->
+                                <img :src="m_download_metamask" alt="" class="app-ex-img d-sm-block d-md-none d-lg-none">
+
+                                <div class="down-left-sup ">
+                                    <img class="mm-logo-img d-none d-sm-none d-md-block d-lg-block" :src="mmLogoImg" />
+                                    <!-- phone -->
+                                    <img :src="m_mm_logo" alt="" class="m_mm_logo  d-sm-block d-md-block d-lg-none">
                                     <div class="sup-text">Supported</div>
                                     <div class="flexStart flexWrap">
-                                        <img class="down-img" :src="iconAppleLogoImg" />
-                                        <img class="down-img" :src="iconGoogleLogoImg" />
-                                        <img class="down-img" :src="iconChromeLogoImg" />
+                                        <img class="down-img float-sm-right" :src="iconAppleLogoImg" />
+                                        <img class="down-img float-sm-right" :src="iconGoogleLogoImg" />
+                                        <img class="down-img float-sm-right" :src="iconChromeLogoImg" />
                                     </div>
                                 </div>
                             </div>
                             <!-- 右边 -->
-                            <div class="down-right col-12 col-lg-6">
-                                <img class="hashpay-img" :src="hashpayImg" />
+                            <div :class="active==2?'down-right col-12 col-lg-6':'hide down-right col-12 col-lg-6'">
+                                <img class="hashpay-img  d-sm-none d-md-block d-lg-block" :src="hashpayImg" />
+                                <!-- phone -->
+                                <img class="hashpay-img d-sm-block d-md-none d-lg-none" :src="m_download_hashpay" />
+                                <Button type="primary" class="btn click-btn d-sm-block d-md-none d-lg-none" @click="jumpTo('down-wrap')">
+                                    DOWNLOAD
+                                </Button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="section section5 d-sm-block d-md-none d-lg-none">
+            <div class="footerPart flexCenter flexColumn">
+                <div class="topPart flexCenter flexColumn">
+                    <img class="m_connectlogo" src="../../assets/images/phone/m_connectlogo.png" alt="">
+                    <div class="line"></div>
+                    <p class="minText">Connect Us</p>
+                </div>
+                <div class="lastPart ">
+                    <div class="flexSpace iconsBox">
+                        <div class="item"> <img src="../../assets/images/phone/m_twitter.png" alt="">
+                            <p>Twitter</p>
+                        </div>
+                        <div class="item"> <img src="../../assets/images/phone/m_telegram.png" alt="">
+                            <p>Telegram</p>
+                        </div>
+                        <div class="item"> <img src="../../assets/images/phone/m_medium.png" alt="">
+                            <p>Medium</p>
+                        </div>
+                    </div>
+                    <p class="footerText">©2021 - 2022 HALO OS.All rights reserved.</p>
+                </div>
+            </div>
 
+        </div>
     </full-page>
 
 </div>
@@ -192,12 +235,26 @@ import m_next from '@/assets/images/phone/m_next.png';
 import m_bg_bridge from '@/assets/images/phone/m_bg_bridge.png';
 import m_bg_3 from '@/assets/images/phone/m_bg_3.png';
 import m_mmlogo_s_w from '@/assets/images/phone/m_mmlogo_s_w.png';
-import m_hashpay_s_b from '@/assets/images/phone/m_hashpay_s_b.png'
+import m_hashpay_s_b from '@/assets/images/phone/m_hashpay_s_b.png';
+import m_mm_logo from '@/assets/images/phone/m_mm_logo.png';
+import m_download_metamask from '@/assets/images/phone/m_download_metamask.png';
+import m_bg_4 from '@/assets/images/phone/m_bg_4.png';
+import m_download_hashpay from '@/assets/images/phone/m_download_hashpay.png';
+
+import m_hashpay_s_w from '@/assets/images/phone/m_hashpay_s_w.png'
+import m_mmlogo_s_b from '@/assets/images/phone/m_mmlogo_s_b.png'
 export default {
     components: {},
     // 定义属性
     data() {
         return {
+            active: 1,
+            m_bg_4: m_bg_4,
+            m_mmlogo_s_b: m_mmlogo_s_b,
+            m_hashpay_s_w: m_hashpay_s_w,
+            m_download_hashpay: m_download_hashpay,
+            m_download_metamask: m_download_metamask,
+            m_mm_logo: m_mm_logo,
             m_hashpay_s_b: m_hashpay_s_b,
             m_mmlogo_s_w: m_mmlogo_s_w,
             bg_light: bg_light,
@@ -243,6 +300,9 @@ export default {
     watch: {},
     // 方法集合
     methods: {
+        changeTab(index) {
+            this.active = index;
+        },
         jumpTo(id) {
             document.querySelector('#' + id).scrollIntoView({
                 behavior: 'smooth',

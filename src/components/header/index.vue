@@ -2,21 +2,23 @@
 <div class="halo-header">
     <header class="home-hd">
         <div class="logo-img-Box" >
-            <img class="logo-img" :src="logoImg" @click="changeMenu" v-show="pageIndex==0"/>
+            <img :class="routerName!='home'?'logo-img none':'logo-img'" :src="logoImg" @click="changeMenu" v-show="pageIndex==0"/>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light float-lg-right float-md-right">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img :src="m_list_w" alt="" v-show="pageIndex==0||pageIndex==3"/>
-                <img :src="m_list_r" alt="" v-show="pageIndex==1||pageIndex==2"/>
+                <img :src="m_list_r" alt="" v-show="pageIndex==1||pageIndex==2||pageIndex==4"/>
             </button>
             <div class="collapse navbar-collapse float-lg-right float-md-right" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
+                    <p class="back d-md-block d-lg-none"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">BACK</p>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                             WALLET
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">META</a>
+                            <a class="dropdown-item" href="#"><img src="../../assets/images/phone/m_mmlogo_s_b.png" alt=""></a>
+                             <a class="dropdown-item" href="#"><img src="../../assets/images/phone/m_hashpay_s_b.png" alt=""></a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -53,10 +55,13 @@ export default {
             m_list_w: m_list_w,
             bg1Img: bg1Img,
             m_list_r:m_list_r,
-            pageIndex: 0
+            pageIndex: 0,
+            routerName:''
         }
     },
     mounted() {
+        console.log(this.$route)
+        this.routerName=this.$route.name;
         this.bus.$on('pageChange', data => {
             console.log('改变' + data);
             this.pageIndex = data;
